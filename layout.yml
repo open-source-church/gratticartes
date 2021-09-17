@@ -1,0 +1,66 @@
+# The "cut line", without rounded corners
+cut:
+  x: 2mm
+  y: 2mm
+  width: 64mm
+  height: 89mm
+  stroke_width: 0
+
+border:
+  x: 4mm
+  y: 4mm
+  width: 60mm
+  height: 85mm
+  fill_color: "#800080"
+  stroke_width: 0
+
+background:
+  x: 7mm
+  y: 7mm
+  width: 54mm
+  height: 79mm
+  fill_color: white
+  stroke_width: 0
+  
+footer:
+  x: 4mm
+  y: 86mm
+  width: 60mm
+  height: 3mm
+  align: center
+  valign: middle
+  font: Sinkin Sans, 6
+  color: white
+  
+help:
+  x: 21mm
+  y: 74mm
+  width: 38mm
+  height: 10mm
+  align: left
+  valign: middle
+  font: Code Pro Light, 8
+  color: "#800080"
+  
+logo:
+  x: 9mm
+  y: 74mm
+  width: 10mm
+  height: 10mm
+  
+icone:
+  x: 22mm
+  y: 13mm
+  width: 24mm
+  height: 24mm
+  align: center
+  
+text:
+  x: 9mm
+  y: 43mm
+  width: 50mm
+  height: 28mm
+  align: center
+  valign: top
+  font: Code Pro, 14
+  color: "#800080"
