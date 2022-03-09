@@ -49,7 +49,7 @@ Squib::Deck.new(cards: data["Type"].size, layout: 'layout.yml', width: "68mm", h
       
     end
   end
-  
+  #save format: :pdf
   save_pdf file: "cards.pdf", trim: "2mm", height: "297mm", width: "210mm"
   # showcase file: "showcase.png", range: 0..6
 end
