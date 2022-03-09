@@ -7,6 +7,10 @@ Un jeu de cartes à s'échanger pour s'entrainer à la grattitude
 
 Ou lors d'un événement de longue durée, en donnant quelques cartes à chaque participant·e·s, à se donner quand les occasions se présentent.
 
+# Téléchargement
+
+Téléchargez la [dernière version](https://github.com/open-source-church/gratticartes/releases/latest) ici.
+
 # License
 
 CC-BY *www.holygames.ch*
