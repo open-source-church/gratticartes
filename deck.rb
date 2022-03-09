@@ -19,7 +19,7 @@ Squib::Deck.new(cards: data["Type"].size, layout: 'layout.yml', width: "68mm", h
     case type
     when "Titre"
       rect range: r, layout: "border"
-      svg range: r, file: "logo_cube_seul.svg", layout: "icone", mask: "white"
+      svg range: r, file: "logo_cube_seul_white.svg", layout: "icone"
       text range: r, str: "Gratti\nCartes", layout: "text", color: "white", valign: "middle", font_size: 24
       
     when "Règles"
@@ -27,7 +27,7 @@ Squib::Deck.new(cards: data["Type"].size, layout: 'layout.yml', width: "68mm", h
       txt = data["Texte"][r].gsub("\\n", "\n").gsub(/\*\*(.*?)\*\*/, '<span weight="bold" foreground="#800080" font_desc="Code Pro Light 12">\1</span>')
       txt = txt.gsub(/\*(.*?)\*/, '<span foreground="#800080">\1</span>')
       text range: r, layout: "background", str: txt, font: "Sinkin Sans, 10", markup: true do |embed|
-        embed.svg key: ":CC-BY:", file: "CC-BY_icon.svg", width: "9mm", height: :scale
+        embed.svg key: ":CC-BY:", file: "CC-BY_icon.svg", width: "9mm", height: :scale, dy: "-3mm"
       end
       
     when "Carte"
@@ -45,11 +45,11 @@ Squib::Deck.new(cards: data["Type"].size, layout: 'layout.yml', width: "68mm", h
       #end
       
       #Text
-      text range: r, str: data["Texte"].map {|t| t.gsub(", ", ",\n")}, layout: "text"
+      text range: r, str: data["Texte"].map {|t| t.gsub(",, ", ",\n")}, layout: "text", ellipsize: :autoscale
       
     end
   end
   
-  #save format: :png
   save_pdf file: "cards.pdf", trim: "2mm", height: "297mm", width: "210mm"
+  # showcase file: "showcase.png", range: 0..6
 end
